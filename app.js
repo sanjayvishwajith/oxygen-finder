@@ -10,7 +10,7 @@ const session = require("express-session")
 
 
 //DB connection
-const mongo_uri =  process.env.MONGOLAB_URI  || "mongodb+srv://sanjay9962:sanjay9962@oxygen-finder.s2fco.mongodb.net/TESTDB";
+const mongo_uri =  process.env.MONGODB_URI  || "mongodb+srv://sanjay9962:sanjay9962@oxygen-finder.s2fco.mongodb.net/TESTDB";
 
 mongoose.connect(mongo_uri, {useNewUrlParser: true , useUnifiedTopology: true})
 mongoose.connection.once('open', () => console.log("Connected"))
