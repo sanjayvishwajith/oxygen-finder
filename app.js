@@ -10,7 +10,7 @@ const session = require("express-session")
 
 
 //DB connection
-const mongo_uri = process.env.MONGODB_URI || "mongodb:localhost:27017/test";
+const mongo_uri = "mongodb+srv://sanjay9962:<sanjay123>@oxygen-finder.s2fco.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
 
 mongoose.connect(mongo_uri, {useNewUrlParser: true , useUnifiedTopology: true})
 mongoose.connection.once('open', () => console.log("Connected"))
@@ -66,6 +66,6 @@ app.get('/logout', (req,res) =>{
 // })
 
 
-app.listen(process.env.PORT || 3000, function() {
+app.listen(3000, function() {
   console.log("Server started on port 3000");
 });
