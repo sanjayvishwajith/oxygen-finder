@@ -60,7 +60,7 @@
       totalLikes = parseInt(likes.dataset.like)
       totalLikes = totalLikes + 1
       const urlseg = 'ilike/' + likes.dataset.id
-      fetch(window.location.href+urlseg , {
+      fetch(window.location.href+ '/' +urlseg , {
         method: 'POST',
         headers:{
           'Content-type': 'application/json'
