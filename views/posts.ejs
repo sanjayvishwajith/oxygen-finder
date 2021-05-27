@@ -36,14 +36,14 @@
   const reply = document.querySelectorAll('.replypost')
   const likebtn = document.querySelectorAll('.thumbsup')
   const likeCont = document.querySelectorAll('.like1')
-  const url = 'http://localhost:3000/posts/'
+
 
   comments.forEach((post) =>{
     const pid = post.dataset.id
     post.addEventListener('click' , () =>{
-      fetch(url + pid)
+      fetch(  window.location.href + pid)
           .then(res =>{
-            window.location = res.url
+                  window.location.href= '/posts/' + pid
           })
           .catch(err => console.log(err))
     })
@@ -52,9 +52,9 @@
   reply.forEach((replybtn) =>{
     const pid = replybtn.dataset.id
     replybtn.addEventListener('click' , () =>{
-      fetch(url + pid)
+      fetch( window.location.href  + pid)
           .then(res =>{
-            window.location = res.url
+            window.location.href = '/posts/' + pid
           })
           .catch(err => console.log(err))
     })

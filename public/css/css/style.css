@@ -465,16 +465,16 @@ a:hover {
   padding: 3rem 4rem;
 }
 .conte {
-  margin-top: 5rem;
-  padding: 3rem 3rem;
-  background-color: rgba(209, 125, 46, 0.2);
+  margin-top: 5.5rem;
+  padding: 4rem 4rem;
+
 
   z-index: 10;
   width: 1000px;
   height: 500px;
   color: rgb(255, 255, 255);
   box-shadow: #240c0c 0px 7px 28px, #f0f4f5 0px 10px 10px;
-  border: 1px solid #d2d2dc;
+  border: 1px solid rgb(255, 255, 255);
   border-radius: 0.5rem;
   display: flex;
   flex-direction: column;
@@ -487,9 +487,9 @@ a:hover {
 
 .conte p {
   color: #fafafa;
-  font-weight: 500;
-  font-family: monospace;
+  font-weight: 550;
+  font-family: "Comic Sans MS", cursive, sans-serif;
   font-size: 2.5rem;
-  width: 75%;
+  width: 95%;
   margin: 0 auto;
 }
